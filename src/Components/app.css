@@ -1,0 +1,16 @@
+.flext-container {
+display:  flex ; 
+align-items: center;
+flex-direction: column;
+width: 100%;
+text-align: center
+}
+
+
+.selector-container{
+    width: 100%;
+}
+
+#card{
+width: 50%;
+}

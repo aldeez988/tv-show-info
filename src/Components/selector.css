@@ -1,0 +1,8 @@
+.selector-container{
+    width: 100%;
+}
+
+.selector-container select{
+width :30%;
+height:  30px;
+ }
