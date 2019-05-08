@@ -1,6 +1,9 @@
 import React from 'react';
 import './eposide.css';
+import stripHtml from "string-strip-html";
+// const stringStripHtml = require("string-strip-html")
 const Eposide = (props) => {
+
     return (
         <div id="card" className="ui card">
             <h1 className="header">{`S${props.data.season}E${props.data.number}:${props.data.name}`}</h1>
@@ -9,7 +12,7 @@ const Eposide = (props) => {
             </div>
             <div class="content">
                 <div className="description">
-                    {props.data.summary}
+                    {stripHtml(String(props.data.summary))}
                 </div>
             </div>
             <div className="extra content">

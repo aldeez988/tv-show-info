@@ -15,7 +15,10 @@ class App extends React.Component {
 
             return { searchvalue: GameOfThrones.filter(eposide => eposide.name === z) }
         })
+
     }
+
+
     render() {
         return (
             <div className="flext-container" >
@@ -23,7 +26,8 @@ class App extends React.Component {
 
 
                 <div className="selector-container">
-                    <Selector onSelectChange={this.onSelectChange} data={GameOfThrones} />
+                    <Selector onSelectChange={this.onSelectChange}
+                        data={GameOfThrones} />
                 </div>
 
 

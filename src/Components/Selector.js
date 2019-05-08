@@ -1,6 +1,5 @@
 import React from 'react';
 import './selector.css'
-
 const Selector = (props) => {
     console.log("Selectorn \n", props.data)
     return (
