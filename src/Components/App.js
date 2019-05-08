@@ -18,7 +18,9 @@ class App extends React.Component {
 
     }
 
-
+    reloadAllEposides = () => {
+        this.setState({ searchvalue: GameOfThrones });
+    }
     render() {
         return (
             <div className="flext-container" >
@@ -27,7 +29,7 @@ class App extends React.Component {
 
                 <div className="selector-container">
                     <Selector onSelectChange={this.onSelectChange}
-                        data={GameOfThrones} />
+                        data={GameOfThrones} reloadAllEposides={this.reloadAllEposides} />
                 </div>
 
 

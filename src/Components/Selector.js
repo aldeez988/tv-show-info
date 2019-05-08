@@ -13,6 +13,12 @@ const Selector = (props) => {
                 }
 
             </select>
+            <span className="ui buttons">
+                <button onClick={() => props.reloadAllEposides()} className="ui labeled icon button active">
+                    <i className="left chevron icon"></i>
+                    Back To All Eposides
+                </button>
+            </span>
         </div>
     );
 };
