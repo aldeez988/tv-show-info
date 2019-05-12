@@ -9,4 +9,6 @@ margin-right: 5px;
  }
 
  
-
+ .selector-container  button{
+     height : 30px important;
+ }
